@@ -60,8 +60,13 @@ body {
   }
   
 
+.about-content{
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
 
-.about-section {
+}
+.about-container-fluid{
     background-color: #333;
     /* Fundo escuro */
     color: #f4f4f4;
@@ -89,10 +94,9 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: relative;
-    transform: rotate(-90deg);
+    position: absolute;
     /* Rotação do texto */
-    margin-right: 30px;
+    padding: 40px;
 }
 
 .about-text-vertical .about-letter {
@@ -221,27 +225,6 @@ body {
     font-style: normal;
 }
 
-.work-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.work-text-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    position: relative;
-    transform: rotate(-90deg);
-    /* Rotação do texto */
-    margin-right: 30px;
-
-
-}
-
 .work-text-vertical .work-letter {
     font-family: "erotica-big", sans-serif;
     font-size: 150px;
@@ -260,23 +243,23 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #B5B5B5;
-    position: relative;
     margin-top: -50px;
     margin-left: 150px;
+    display: flex;
 }
 /* Estilo do quadrado */
-.custom-square {
+.bg-card {
     width: 300px; /* Define o tamanho do quadrado */
     height: 300px; /* Largura = Altura */
-    background-color: #F1F1F1; /* Fundo branco */
+    background-color: #eeeeee; /* Fundo branco */
     border-radius: 15px; /* Bordas arredondadas */
-    position: relative;
+    position: sticky;
     margin: 20px 15px;
-    padding: 20px;
+    padding: 30px;
   }
   
   /* Faixa diagonal */
-  .diagonal-banner {
+  .text-white {
     position: absolute;
     top:50%;
     left: 10%;
