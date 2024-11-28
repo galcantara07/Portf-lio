@@ -1,0 +1,422 @@
+/* Estilo geral */
+body {
+    scroll-behavior: smooth;
+    /* Para rolagem suave */
+}
+
+/* Configuração geral */
+.display-4 {
+    padding: 100px 0;
+    font-family: "playfair-display", serif;
+    font-size: 80px;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    margin-left: 150px;
+}
+
+.lead {
+    font-size: 15px;
+    padding-bottom: 50px;
+    font-family: "montserrat", sans-serif;
+    font-weight: -50;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    margin-top: -100px;
+    margin-left: 100px;
+    color: #040404;
+}
+
+.break-news-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #323232; /* Fundo preto */
+  }
+  
+  .break-news {
+    color: white; /* Cor do texto branco */
+    font-size: 1.2rem; /* Tamanho do texto */
+    white-space: nowrap; /* Evita quebra de linha */
+    animation: scroll-text 10s linear infinite; /* Efeito de rolagem contínua */
+  }
+  
+  .break-news span {
+    margin: 0 1rem;
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+.about-section {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #f4f4f4;
+    /* Texto claro */
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transform: rotate(-90deg);
+    /* Rotação do texto */
+    margin-right: 30px;
+}
+
+.about-text-vertical .about-letter {
+    font-family: "erotica-big", sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    color: #B5B5B5;
+    line-height: 0.8;
+    position: relative;
+    margin-bottom: -20px;
+    margin-right: 100px;
+}
+
+.about-text-vertical .about-phrase {
+    font-family: "playfair-display", serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #B5B5B5;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 200px;
+}
+
+/* Estilo geral da seção (seção minhas linguages) */
+.languages-section {
+    background-color: #f7f7f7;
+    /* Fundo claro */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-style: normal;
+}
+
+/* Lista de linguagens */
+.languages-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.language-item {
+    border-bottom: 1px solid #000;
+    /* Linha separadora */
+    padding: 20px 0;
+}
+
+.language-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+.language-name {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.language-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Conteúdo das linguagens */
+.language-content {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    display: none;
+    /* Ocultado por padrão */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.active .language-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo do botão ativo */
+.language-item.active .language-content {
+    display: block;
+}
+
+.language-item.active .language-toggle {
+    transform: rotate(45deg);
+    /* Transforma "+" em "x" */
+}
+
+.about-content {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content strong {
+    font-weight: bold;
+}
+
+/* Seção Trabalhos*/
+.work-section {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #f4f4f4;
+    /* Texto claro */
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.work-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.work-text-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    transform: rotate(-90deg);
+    /* Rotação do texto */
+    margin-right: 30px;
+
+
+}
+
+.work-text-vertical .work-letter {
+    font-family: "erotica-big", sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    color: #B5B5B5;
+    line-height: 0.8;
+    position: relative;
+    margin-bottom: -20px;
+    margin-right: 100px;
+
+
+}
+
+.work-text-vertical .work-phrase {
+    font-family: "playfair-display", serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #B5B5B5;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 150px;
+}
+/* Estilo do quadrado */
+.custom-square {
+    width: 300px; /* Define o tamanho do quadrado */
+    height: 300px; /* Largura = Altura */
+    background-color: #F1F1F1; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    position: relative;
+    margin: 20px 15px;
+    padding: 20px;
+  }
+  
+  /* Faixa diagonal */
+  .diagonal-banner {
+    position: absolute;
+    top:50%;
+    left: 10%;
+    width: 100%;
+    transform: rotate(-45deg) translateY(-50%);
+    background-color: #d3d3d3; /* Cor da faixa */
+    color: #323232; /* Cor do texto */
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: "playfair-display", serif;
+    
+  }
+  
+
+/*Navbar*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #323232 !important;
+}
+
+.btn-dark {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accordion Custom Style */
+.accordion-button::after {
+    content: "➕";
+    transition: transform 0.3s;
+}
+
+.accordion-button.collapsed::after {
+    content: "➕";
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "➖";
+    transform: rotate(180deg);
+}
+
+/* Footer */
+footer {
+    background-color: #E9E8E3;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn .btn-dark{
+    align-items: flex-start;
+}
+
+
+footer h5 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #909090;
+}
+
+footer ul li {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+} 
+
+footer ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #323232;
+    color: #fff;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footer a {
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .language-item {
+        max-width: 100%;
+    }
+
+    .custom-square {
+        width: 100%;
+        height: auto;
+    }
+}
